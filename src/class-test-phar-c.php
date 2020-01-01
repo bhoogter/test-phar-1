@@ -1,5 +1,5 @@
 <?php
 
-class test_phar_a {
-	public $name =  "test-phar-a";
+class test_phar_c {
+	public $name =  "test-phar-c";
 }
