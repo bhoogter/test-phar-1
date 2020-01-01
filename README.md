@@ -1,3 +1,3 @@
 Test Phar packages
 
-Used by other repos.
+Used by other repos

@@ -16,11 +16,12 @@ before_deploy:
   - php box.phar build
 deploy:
   - provider: releases
+    edge: true
     skip_cleanup: true
     file: test-phar-1.phar
     #    all_branches: true
     api_key:
-      secure: a724d2a2b485713632a39b007b2771bfa9842907
+      secure: "KDTRX/7NlU1vp63pQhzfTVzwyXpLdIKZE2UONm5uZvCgTrMtPgDxaUb6x/CUlFx9wXG11IJ7zycl94WYKAQDvePDfY06yKU39o+Iu2eQ3fuDlZFCncWTp8Sqj6wX716/vuDx9dAy1AC+kBF32xXHKVbRJ+znfO7TP7owN7HTsCyyUQjz2h0X+jfjYDNDaNUBTaPN1J1FAoWw/X4Suh/KDsWmH05IG1zBOq3W9hWo9zpYwdtWUYrtyCekJ+f3EKmeUkZ2RZoQplAFeje4reoDFU4aHeP6soX4LprGgW+XC1es1vFabZlK8thg/YHflSftZtLvh71n3A1ykAfC4pbnZNYc+xhwY10u5mSmt9ESqF95oaRXJLq/WgZZ+E9yVaGywC8TAzu9stFarHhyz47T4RO+Hvmi6dZG9uTdcPpbgDcnMnK4hUKB73/3eGTSTn5nqtQ2x6iVzHRegpZGnhl6Ld+7dYaDdBTXbcx0pdKaVcLjBwIAQJI+sHWIH0gn22dkCf+4M/a124kLuojjAwxBenkaaija9jvqoKisn66OlvlST//yt7Ml5FL3mu1Z+UH9gUMT+Jf4cH8hZNpIjm8Ttp+edeUHsyhFAjWMdUtAUbTjbCXLQZBsdkMOhvRwvNpJrk9vRKwFg2TQGsDXFZEX8l37oCKAK8iIC1acUkR0obI="
     on:
       repo: bhoogter/test-phar-1
       tags: true
