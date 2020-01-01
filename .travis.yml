@@ -16,7 +16,6 @@ before_deploy:
   - php box.phar build
 deploy:
   - provider: releases
-    edge: true
     skip_cleanup: true
     file: test-phar-1.phar
     #    all_branches: true
